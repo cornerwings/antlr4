@@ -689,4 +689,16 @@ public class IntervalSet implements IntSet {
         if ( this.readonly && !readonly ) throw new IllegalStateException("can't alter readonly IntervalSet");
         this.readonly = readonly;
     }
+
+    public static void main(String[] args) {
+		IntervalSet set1 = new IntervalSet();
+		set1.add(10, 50);
+		set1.add(1, 8);
+
+		IntervalSet set2 = new IntervalSet();
+		set2.add(3, 7);
+
+		IntervalSet and = set1.and(set2);
+		System.out.println(and);
+	}
 }

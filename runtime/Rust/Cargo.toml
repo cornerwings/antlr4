@@ -1,0 +1,9 @@
+[package]
+name = "libantlr4"
+version = "0.1.0"
+authors = ["Sainath Mallidi <sainath@amazon.com>"]
+
+[dependencies]
+time = "0.1.12"
+regex = "0.1.41"
+fasthash = "0.2.8"
