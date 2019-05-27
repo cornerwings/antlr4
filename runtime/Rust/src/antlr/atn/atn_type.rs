@@ -1,4 +1,4 @@
-enum ATNType {
+pub enum ATNType {
     /**
      * A lexer grammar.
      */
